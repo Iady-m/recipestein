@@ -1,0 +1,19 @@
+node_modules
+config.json
+.idea
+.vscode
+coverage
+*.log
+*.iml
+.nyc_output
+
+# Don't include unencrypted files
+**/encrypted/*
+!**/encrypted/*.enc
+
+# Don't allow any secrets to be commited to github
+kubernetes/chart/templates/secrets/**/*.yaml
+
+*.terraform
+*.tfstate
+*.tfstate.backup
